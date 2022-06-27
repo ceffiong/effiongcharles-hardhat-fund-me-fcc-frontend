@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fund me!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">FundMe!</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary btn-connect">Connect</button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron" style="margin-top: 50px">
+        <h1 class="display-4">Welcome to FundMe!</h1>
+        <p class="lead">
+          FundMe is a crowfunding Web3 project that allows users to donate
+          ETH to a crypto wallet. The FundMe smart contract is deployed on the
+          a local hardhat blockchain network.
+        </p>
+        <hr class="my-4" />
+        <p>This tutorial follows the freecodecamp course which can be found here <a href="https://www.youtube.com/watch?v=gyMwXuJrbJQ" target="_blank">Learn Blockchain, Solidity, and Full Stack Web3 Development with JavaScript – 32-Hour Course</a></a></p>
+        
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active disabled">
+              Select an action to perform
+            </a>
+            <a href="#" class="list-group-item list-group-item-action btn-connect">Connect</a>
+            <a href="#" class="list-group-item list-group-item-action" id="btn-show-donate">Donate</a>
+            <a href="#" class="list-group-item list-group-item-action" id="btn-balance">Balance</a>
+            <a href="#" class="list-group-item list-group-item-action" id="btn-withdraw">Withdraw</a>
+          </div>
+      </div>
+
+      <div style="display: none;" class="alert alert-danger mt-4" role="alert">
+        This is a primary alert—check it out!
+      </div> 
+
+      <div style="display: none;" class="alert alert-success mt-4" role="alert">
+        This is a primary alert—check it out!
+      </div>
+
+
+      <!-- Donate section -->
+      <div style="display: none;" id="div-donate-eth" class="input-group mt-4">
+        <span class="input-group-text" id="basic-addon1">ETH</span>
+        <input id="input-eth-amount" type="number" class="form-control" placeholder="enter value" aria-label="ETH amount" aria-describedby="basic-addon1">
+        <span class="input-group-button" id="basic-addon1"><button id="btn-fund" class="btn btn-secondary">Send</button></span>
+      </div>
+      
+    </div>
+    <script src="script/script.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
